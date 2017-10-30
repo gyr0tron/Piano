@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<title>Piano</title>
+	<link rel="stylesheet" type="text/css" href="css/virtualPiano.css" media="all" />
+	<link title="Icon" rel="icon" href="images/HTML5VirtualPianoIcon.png" type="image/png" />
+	<link rel="shortcut icon" href="images/HTML5VirtualPianoIcon.png" type="image/png" />
+    <script type="text/javascript" src="js/my.js"></script>
+    <script type="text/javascript" src="js/virtualPiano.js">
+    	
+    </script>
+</head>
+<body>
+	<section id="piano" class="">
+		<div class="keyboard">
+			<ul class="scale oct0">
+				<li class="C white"><a href="#" onmousedown="playNote('C1', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('C1', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>C</span></a></li>
+				<li class="Cd black"><a href="#" onmousedown="playNote('C1d', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('C1d', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>C&#9839;</span></a></li>
+				<li class="D white"><a href="#" onmousedown="playNote('D1', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('D1', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>D</span></a></li>
+				<li class="Eb black"><a href="#" onmousedown="playNote('E1b', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('E1b', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>E&#9837;</span></a></li>
+				<li class="E white"><a href="#" onmousedown="playNote('E1', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('E1', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>E</span></a></li>
+				<li class="F white"><a href="#" onmousedown="playNote('F1', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('F1', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>F</span></a></li>
+				<li class="Fd black"><a href="#" onmousedown="playNote('F1d', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('F1d', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>F&#9839;</span></a></li>
+				<li class="G white"><a href="#" onmousedown="playNote('G1', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('G1', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>G</span></a></li>
+				<li class="Gd black"><a href="#" onmousedown="playNote('G1d', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('G1d', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>G&#9839;</span></a></li>
+				<li class="A white"><a href="#" onmousedown="playNote('A1', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('A1', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>A</span></a></li>
+				<li class="Bb black"><a href="#" onmousedown="playNote('B1b', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('B1b', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>B&#9837;</span></a></li>
+				<li class="B white"><a href="#" onmousedown="playNote('B1', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('B1', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>B</span></a></li>
+			</ul>
+			<ul class="scale oct1">
+				<li class="C white"><a href="#" onmousedown="playNote('C2', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('C2', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>C</span></a></li>
+				<li class="Cd black"><a href="#" onmousedown="playNote('C2d', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('C2d', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>C&#9839;</span></a></li>
+				<li class="D white"><a href="#" onmousedown="playNote('D2', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('D2', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>D</span></a></li>
+				<li class="Eb black"><a href="#" onmousedown="playNote('E2b', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('E2b', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>E&#9837;</span></a></li>
+				<li class="E white"><a href="#" onmousedown="playNote('E2', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('E2', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>E</span></a></li>
+				<li class="F white"><a href="#" onmousedown="playNote('F2', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('F2', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>F</span></a></li>
+				<li class="Fd black"><a href="#" onmousedown="playNote('F2d', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('F2d', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>F&#9839;</span></a></li>
+				<li class="G white"><a href="#" onmousedown="playNote('G2', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('G2', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>G</span></a></li>
+				<li class="Gd black"><a href="#" onmousedown="playNote('G2d', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('G2d', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>G&#9839;</span></a></li>
+				<li class="A white"><a href="#" onmousedown="playNote('A2', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('A2', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>A</span></a></li>
+				<li class="Bb black"><a href="#" onmousedown="playNote('B2b', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('B2b', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>B&#9837;</span></a></li>
+				<li class="B white"><a href="#" onmousedown="playNote('B2', this.parentNode);" onmouseup="pauseNote(this.parentNode);" onmouseover="showCord('B2', chordsScale);" onmouseout="pauseNote(this.parentNode);" onclick="return false;"><span>B</span></a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="loader">
+		<div>
+			<progress max="26" value="0">
+				
+			</progress>
+		</div>
+	</section>
+	<audio preload="auto" onloadeddata="updateProgress();">
+	  <source src="files/2octaves.mp3" type="audio/mp3" />
+	  <source src="files/2octaves.ogg" type="audio/ogg" />
+	</audio>
+</body>
+</html>
